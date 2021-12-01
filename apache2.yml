@@ -1,0 +1,12 @@
+- name: sample playbook
+  hosts: all
+  become: true
+  tasks:
+  - name: install Apache2
+    apt: update_cache=yes
+         name=apache2
+         state=latest
+  - name: create content
+    copy:
+          content: "Welcome to Ansible session"
+          dest: /var/www/html/index.html
