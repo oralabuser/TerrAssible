@@ -3,7 +3,7 @@ export PATH=$PATH:/usr/local/bin/terraform
 echo $PATH
 
 cd /home/ec2-user/terraform_lab
-ln -s /usr/local/bin/terraform terraform
+
 
 pwd
 
