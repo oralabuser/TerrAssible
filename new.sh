@@ -1,5 +1,8 @@
 #!/bin/sh
 cd /home/ec2-user/terraform_lab
+
+pwd
+
 terraform init
 terraform plan
 terraform apply -auto-approve
