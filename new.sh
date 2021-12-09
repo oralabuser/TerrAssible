@@ -1,4 +1,5 @@
 #!/bin/sh
+export PATH=$PATH:/usr/local/bin/terraform
 cd /home/ec2-user/terraform_lab
 
 pwd
