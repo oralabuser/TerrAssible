@@ -7,9 +7,9 @@ ln -s /usr/local/bin/terraform terraform
 
 pwd
 
-terraform init
-terraform plan
-terraform apply -auto-approve
+./terraform init
+./terraform plan
+./terraform apply -auto-approve
 
 var=$(terraform output instance-public-ip)
 
