@@ -1,6 +1,8 @@
 #!/bin/sh
 export PATH=$PATH:/usr/local/bin/terraform
 echo $PATH
+
+sudo ln -s /usr/local/bin/terraform terraform
 cd /home/ec2-user/terraform_lab
 
 pwd
