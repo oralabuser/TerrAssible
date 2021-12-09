@@ -15,6 +15,8 @@ var=$(./terraform output instance-public-ip)
 
 echo "hello" + $var
 
+sleep 1m
+
 ansible -m ping all -i "$var," --private-key=keyfile
 
 ansible-playbook apache2.yml -i "ip," --private-key=keyfile -e "ansible_python_interpreter=/usr/bin/python3"
